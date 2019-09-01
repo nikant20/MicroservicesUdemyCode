@@ -1,0 +1,15 @@
+package tech.nikant.currencyconversionservice;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.openfeign.EnableFeignClients;
+
+@SpringBootApplication
+@EnableFeignClients("tech.nikant.currencyconversionservice")
+public class CurrencyconversionserviceApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(CurrencyconversionserviceApplication.class, args);
+	}
+
+}

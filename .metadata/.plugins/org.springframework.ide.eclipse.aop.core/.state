@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="currencyexchangeservice"/>
+<aop-project name="netflixeurekanamingserver"/>
+<aop-project name="springcloudconfigserver"/>
+<aop-project name="currencyconversionservice"/>
+<aop-project name="limitservice"/>
+<aop-project name="netflixzuulapigatewayserver"/>
+</aop-reference-model>

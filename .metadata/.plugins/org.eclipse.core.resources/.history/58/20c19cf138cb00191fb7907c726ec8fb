@@ -1,0 +1,24 @@
+package tech.nikant.currencyconversionservice;
+
+import java.math.BigDecimal;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
+
+@RestController
+public class CurrencyConversionController {
+	
+	@GetMapping("/currencyconverter/from/{from}/to/{to}/quantity/{quantity}")
+	public CurrencyConversionBean convertCurrency(
+			@PathVariable String to,
+			@PathVariable String from,
+			@PathVariable BigDecimal quantity
+			) {
+		
+		new RestTemplate().getForEntity("http://localhost:8000/", responseType)
+		
+		return  new CurrencyConversionBean(1L,from,to,BigDecimal.ONE,quantity,quantity,0);
+	}
+}

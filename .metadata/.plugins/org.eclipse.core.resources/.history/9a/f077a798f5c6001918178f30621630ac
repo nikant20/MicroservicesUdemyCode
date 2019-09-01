@@ -1,0 +1,5 @@
+package dev.nikant.currencyexchangeservice;
+
+public class ExchangeValueRepository {
+
+}
